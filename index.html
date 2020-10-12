@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>
-            Домашня робота 2.2
+            Домашня робота
         </title>
     </head>
     <body>
@@ -16,6 +16,9 @@
                     </li>
                     <li class="nav__item">
                         <a href="#html" class="nav__link">html</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="feed-back" class="nav__link">Форма зауважень та пропозицій</a>
                     </li>
                 </ul>
             </nav>
@@ -60,7 +63,56 @@
                     <li class="html__list-item">
                         <a href="https://www.w3schools.com/Tags/tag_head.asp" class="html__list-link">HTML head Tag</a>
                     </li>
+                    <li class="html__list-item">
+                        <a href="https://www.w3schools.com/html/html_forms.asp" class="html__list-link">HTML Forms</a>
+                    </li>
+                    <li class="html__list-item">
+                        <a href="https://www.w3schools.com/html/html_form_input_types.asp" class="html__list-link">HTML Input Types</a>
+                    </li>
+                    <li class="html__list-item">
+                        <a href="https://www.w3schools.com/html/html_form_attributes.asp" class="html__list-link">HTML Input Attributes</a>
+                    </li>
+                    <li class="html__list-item">
+                        <a href="https://www.w3schools.com/html/html_form_elements.asp" class="html__list-link">HTML Form Elements</a>
+                    </li>
+                    <li class="html__list-item">
+                        <a href="https://css.in.ua/html/tag/table" class="html__list-link">html теґ table</a>
+                    </li>
+                    <li class="html__list-item">
+                        <a href="https://www.w3schools.com/html/html_iframe.asp" class="html__list-link">HTML Iframes</a>
+                    </li>
+                    <li class="html__list-item">
+                        <a href="https://www.w3schools.com/html/html_charset.asp" class="html__list-link">HTML Encoding (Character Sets)</a>
+                    </li>
                 </ul>
+            </section>
+            <section class="feed-back" id="feed-back">
+                <h2 class="feed-back__title">Форма зауважень та пропозицій</h2>
+                <form action="post" class="feed-back__form">
+                    <fieldset>
+                        <legend>Питання, зауваження, пропозиції</legend>
+                        <label for="Admonition">Якщо виникли питання пишіть:</label>
+                        <br>
+                        <textarea name="admonition" id="admonition" cols="43" rows="10" placeholder="Вкажіть ваше питання"></textarea>
+                        <br>
+                        <label for="Admonition">Вкажіть, що по-вашому зроблено не правильно:</label>
+                        <br>
+                        <textarea name="admonition" id="admonition" cols="43" rows="10" placeholder="Вкажіть, що вам не подобається"></textarea>
+                        <br>
+                        <label for="proposal">Напишіть ваші пропозиції:</label>
+                        <br>
+                        <textarea name="proposal" id="proposal" cols="43" rows="10" placeholder="Як зробити краще?"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ваші контакти(не обов'язково)</legend>
+                        <label for="commentator-name">Ваше ім'я:</label>
+                        <input type="text" id="commentator-name" name="commentator-name" placeholder="напишіть ваше ім'я">
+                        <label for="commentator-tel">Ваш номер:</label>
+                        <input type="tel" id="commentator-tel" name="commentator-tel" placeholder="напишіть ваш номер">
+                    </fieldset>
+                    <br>
+                    <button formmethod="POST" class="feed-back__btn">Відправити</button>
+                </form>
             </section>
         </main>
     </body>
